@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<title>Slice of Pi Tutoring</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Verdana", Georgia, Serif;}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Verdana";
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+p.text-format {
+    width: 900px;
+}
+
+p.centered {
+    text-align: center;
+}
+</style>
+<body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">Slice of Pi</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-user"></i>About</a>
+      <a href="#references" class="w3-bar-item w3-button"><i class="fa fa-users"></i>Refereness</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i>Contact</a>
+      <a href="#schedule" class="w3-bar-item w3-button"><i class="fa fa-calendar"></i>Schedule</a>
+      <a href="#live stream" class="w3-bar-item w3-button"><i class="fa fa-television"></i>Live Stream</a>
+    </div>
+
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+  <a href="#references" onclick="w3_close()" class="w3-bar-item w3-button">References</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
+  <a href="#schedule" onclick="w3_close()" class="w3-bar-item w3-button">Schedule</a>
+  <a href="#live stream" onclick="w3_close()" class="w3-bar-item w3-button">Live Stream</a>
+</nav>
+
+
+<!-- Header -->
+<div id="home">
+  <p class="centered"><img class="w3-image" src="pi2.gif" width="400" height="400"></p>
+</div>
+
+<!-- Page content -->
+<div>
+
+  <!-- About Section -->
+  <div id="about">
+    <div>
+     <p class="centered"><img src="picfortutoring.jpg" class="w3-round w3-image w3-opacity-min" width="600" height="750"></p>
+    </div>
+
+    <div>
+      <h1>About Slice of Pi</h1><br>
+      <h5>Tutoring since 2016</h5>
+      <p class="centered"> I am Nick Perez, a 4th year computer science student and teaching assistant at Carleton University. I have a love for teaching both math and computer science. My interests include: playing/composing music, health/fitness, modern technological advancements, computer science, math, and cats.</p>
+      <p class="centered"> The services I offer are in any grade up to grade 12 math and computer science. I will tutor some computer science courses at the university level as well, these courses primarily include: first and second year discrete math, introductory level data structure/algorithm courses and introductory programming courses. I typically charge $20 an hour and host all of my tutoring sessions in my house in Barrhaven. I will tutor on campus as well at Carleton University but my hours are less flexible there.</p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="references">
+    <div class="w3-col 30 w3-padding-large">
+      <h1>What people have said about me!</h1><br>
+      <p class="centered"><a href="https://carleton.ca/tasupport/2018/celebrating-carletons-outstanding-tas-5/" target="_blank">link to my 2018 outstanding teaching assistant nomination (scroll down and click on "See the list of nominees for the 2017-2018 awards here")</a></p><br>
+      <p class="centered"><a href="https://carleton.ca/tasupport/wp-content/uploads/Nominees-Outstanding-TA-Awards-2017.pdf" target="_blank">link to my 2017 outstanding teaching assistant nomination (see bottom of page 4)</a></p><br>
+      <p class="centered">"My experience tutoring with Nick was wonderful. He taught me the fundamentals of coding in Python and new ways on approaching problems." -Omar, December 2016</p><br>   
+      <p class="centered">"In the beginning of the semester I was struggling with grade 12 math and barely passing my tests. However, thanks to Nick taking time out of his day and tutoring me, I was able to improve and I am now getting 80% and above." -Gwen, January 2018</p><br>
+      <p class="centered">"My son was failing Grade 9 math. In early November, he started spending time with Nick, usually twice a week. By Christmas, his credit was no longer in jeopardy and he had brought home marks of 69, 87 and even a 100% on his tests and quizzes. With Nick's calm and friendly demeanour, my son was able to quickly feel comfortable and begin to believe he could do better, but it was Nick's professional approach to "managing" my son's math learning that really impressed me. I have no doubt in recommending Nick to any and all who can benefit from his tutoring." -Dave, January 2018</p><br>
+      <p class="centered">"My daughter took a grade 11 computer science course without having taken any previous computer classes. She was overwhelmed and struggling to understand. We found Nick, and hoped with his tutoring our daughter would be able to pass the course and receive the credit. To our amazement our daughter not only passed but had a final mark of 87%. The mark was great but more importantly our daughter discovered she really enjoyed the class. Thank you Nick for your reliability and willingness to accommodate busy schedules." -Karen, January 2017</p><br>
+      <p class="centered">"I am currently a second year student at Carleton University studying Computer Science. It was difficult for me to learn coding at first due to me not having any experiences previously but Nick tutored me and helped me understand Python very well and I did well on all of the assignments" -Shaiq, January 2018</p><br>
+      <p class="centered">"We have been very happy with the help that Nick has provided on grade 12 math. He has taken the time to explain the concepts and not just go over the material, but also gave further insight into certain subject matters. He has explained some of the math concepts in a clearer manner than what is being taught at school. This has helped my child do better at school in a short amount of time. Very knowledgeable and patient. Highly recommended." -Jerry, January 2018</p><br>
+
+    </div>
+    
+
+  </div>
+
+  <hr>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64" id="contact">
+    <h1>Contact</h1><br>
+  </div>
+  <p class="centered">email me for any questions and for booking tutoring sessions:</p>
+  <p class="centered"><img src="picOfEmail.png"></p><br><br><br><br><br>
+
+  <div class="w3-center" id="schedule">
+    <br><br><h1>Here is my availability:</h1><br>
+
+    <iframe id="myCalendar" src="https://calendar.google.com/calendar/b/5/embed?showTitle=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=tutoring.sliceofpi%40gmail.com&amp;color=%231B887A&amp;ctz=America%2FToronto" style="border-width:0" frameborder="0" height="600" onload="this.width=screen.width;" scrolling="no"></iframe>
+
+
+  </div>
+
+  
+
+    <div id="live stream">
+    <h1>COMING SOON</h1><br>
+    <p class="centered"><a href="https://www.twitch.tv/slice_of_pi_tutoring" target="_blank">https://www.twitch.tv/slice_of_pi_tutoring</a></p>
+    <!-- Add a placeholder for the Twitch embed 
+    <div class=w3-center id="twitch-embed"></div>
+    </div>
+
+    Load the Twitch embed script
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+    Create a Twitch.Embed object that will render within the "twitch-embed" root element.
+    <script type="text/javascript" language="javascript">
+      new Twitch.Embed("twitch-embed", {
+        width: Math.min(($(window).height() * 854/480), ($(window).width())) * .9,
+        height: Math.min(($(window).height()), ($(window).width() * 480/854)) * .9,
+        channel: "slice_of_pi_tutoring"
+      });
+  </script> --> 
+  
+<!-- End page content -->
+</div>
+
+<script>
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
